@@ -1,0 +1,25 @@
+{
+  "djibGateApp": {
+    "checkup": {
+      "home": {
+        "title": "Checkups",
+        "createLabel": "Create a new Checkup",
+        "createOrEditLabel": "Create or edit a Checkup",
+        "notFound": "No Checkups found"
+      },
+      "created": "A new Checkup is created with identifier {{ param }}",
+      "updated": "A Checkup is updated with identifier {{ param }}",
+      "deleted": "A Checkup is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Checkup {{ id }}?"
+      },
+      "detail": {
+        "title": "Checkup"
+      },
+      "libelle": "Libelle",
+      "dateCheck": "Date Check",
+      "checkpoints": "Checkpoints",
+      "voiture": "Voiture"
+    }
+  }
+}

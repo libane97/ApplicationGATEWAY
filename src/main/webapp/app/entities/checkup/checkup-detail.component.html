@@ -1,0 +1,40 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="checkup">
+            <h2><span jhiTranslate="djibGateApp.checkup.detail.title">Checkup</span> {{ checkup.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="djibGateApp.checkup.libelle">Libelle</span></dt>
+                <dd>
+                    <span>{{ checkup.libelle }}</span>
+                </dd>
+                <dt><span jhiTranslate="djibGateApp.checkup.dateCheck">Date Check</span></dt>
+                <dd>
+                    <span>{{ checkup.dateCheck }}</span>
+                </dd>
+                <dt><span jhiTranslate="djibGateApp.checkup.voiture">Voiture</span></dt>
+                <dd>
+                    <div *ngIf="checkup.voiture">
+                        <a [routerLink]="['/voiture', checkup.voiture?.id, 'view']">{{ checkup.voiture?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/checkup', checkup.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

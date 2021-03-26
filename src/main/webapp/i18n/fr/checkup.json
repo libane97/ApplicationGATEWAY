@@ -1,0 +1,25 @@
+{
+  "djibGateApp": {
+    "checkup": {
+      "home": {
+        "title": "Checkups",
+        "createLabel": "Créer un nouveau Checkup",
+        "createOrEditLabel": "Créer ou éditer un Checkup",
+        "notFound": "Aucun Checkup trouvé"
+      },
+      "created": "Un nouveau Checkup a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Checkup avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Checkup avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Checkup {{ id }} ?"
+      },
+      "detail": {
+        "title": "Checkup"
+      },
+      "libelle": "Libelle",
+      "dateCheck": "Date Check",
+      "checkpoints": "Checkpoints",
+      "voiture": "Voiture"
+    }
+  }
+}

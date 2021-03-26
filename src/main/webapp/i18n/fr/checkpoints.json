@@ -1,0 +1,24 @@
+{
+  "djibGateApp": {
+    "checkpoints": {
+      "home": {
+        "title": "Checkpoints",
+        "createLabel": "Créer un nouveau Checkpoints",
+        "createOrEditLabel": "Créer ou éditer un Checkpoints",
+        "notFound": "Aucun Checkpoints trouvé"
+      },
+      "created": "Un nouveau Checkpoints a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Checkpoints avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Checkpoints avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Checkpoints {{ id }} ?"
+      },
+      "detail": {
+        "title": "Checkpoints"
+      },
+      "libelle": "Libelle",
+      "note": "Note",
+      "checkup": "Checkup"
+    }
+  }
+}

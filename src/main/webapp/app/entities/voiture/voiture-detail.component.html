@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="voiture">
+            <h2><span jhiTranslate="djibGateApp.voiture.detail.title">Voiture</span> {{ voiture.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="djibGateApp.voiture.title">Title</span></dt>
+                <dd>
+                    <span>{{ voiture.title }}</span>
+                </dd>
+                <dt><span jhiTranslate="djibGateApp.voiture.price">Price</span></dt>
+                <dd>
+                    <span>{{ voiture.price }}</span>
+                </dd>
+                <dt><span jhiTranslate="djibGateApp.voiture.moteur">Moteur</span></dt>
+                <dd>
+                    <span>{{ voiture.moteur }}</span>
+                </dd>
+                <dt><span jhiTranslate="djibGateApp.voiture.client">Client</span></dt>
+                <dd>
+                    <div *ngIf="voiture.client">
+                        <a [routerLink]="['/client', voiture.client?.id, 'view']">{{ voiture.client?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/voiture', voiture.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
