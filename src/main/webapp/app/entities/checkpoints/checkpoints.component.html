@@ -36,7 +36,7 @@
                     <td>{{ checkpoints.note }}</td>
                     <td>
                         <div *ngIf="checkpoints.checkup">
-                            <a [routerLink]="['/checkup', checkpoints.checkup?.id, 'view']" >{{ checkpoints.checkup?.id }}</a>
+                            <a [routerLink]="['/checkup', checkpoints.checkup?.id, 'view']" >{{ checkpoints.checkup.libelle }}</a>
                         </div>
                     </td>
                     <td class="text-right">
